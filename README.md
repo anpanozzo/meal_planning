@@ -54,7 +54,7 @@ ______________________
 - Menu recap should be only the title of the meal, the URL (if available) amount of protein and if its glowing skin (what do I need to research for glowing skin?)
 
 
-## INPUTS // later - change based on the user
+## INPUTS _(note: adjust later - change based on the user. not for mvp)_
 ### Biometrics 
 #### Person 1 
 - 150 lbs 
@@ -68,7 +68,7 @@ These are foods that cause GI distress when consumed. It's best to avoid these a
 - cow's milk 
 - eggs
 
-## Foods To Minimize for Abby 
+## Foods To Minimize
 I will not make these at home but will eat them in small quantities if made properly 
 - mushrooms 
 - black beans 
