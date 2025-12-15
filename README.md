@@ -4,7 +4,7 @@ Nothing sends me into an annoyed state then being asked "What do you want for di
 Because meal planning is time-consuming and repetitive how might I create a personal workflow that preserves nourishment and joy, but removes the frustration?
 
 # Problem
-I need to eat 150g of protein per day for lean body composition and glowing skin. It's time-consuming to find recipes that taste good, I know how to cook, I love to eat while delivering the protein and skin-health benefits I want. Right now what I make may or may not get those results.
+I need to eat 136g of protein per day for lean body composition and glowing skin. It's time-consuming to find recipes that taste good, I know how to cook, I love to eat while delivering the protein and skin-health benefits I want. Right now what I make may or may not get those results.
 
 # Omissions
 Adding multiple people's preferences is an omission now.
