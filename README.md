@@ -55,11 +55,6 @@ ______________________
 
 
 ## INPUTS _(note: adjust later - change based on the user. not for mvp)_
-### Biometrics 
-#### Person 1 
-- 150 lbs 
-- 5 ft 4 in tall
-- 39 years old (will be 40 years old in 3 mos)
 
 ## Food Sensitivities
 These are foods that cause GI distress when consumed. It's best to avoid these at all costs. Recipes can have them just call out that adjustments need to be made
