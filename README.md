@@ -4,7 +4,7 @@ Nothing sends me into a rage like "What's for dinner?" and yet eating is my favo
 Because meal planning is time-consuming and repetitive how might I create a meal planning workflow that preserves nourishment and joy, but removes the frustration?
 
 # Problem
-I need to eat 150g of protein per day for lean body composition and glowing skin. It's time-consuming to find recipes that taste good, match my cooking skills and eating preferances, while delivering the protein and skin-healthy nutrients I need. Right now I only know how to make things that may or may not get me those results. Then if I add another person into the mix it's harder. Adding multiple people's preferences is an omission now.
+I need to eat 150g of protein per day for lean body composition and glowing skin. It's time-consuming to find recipes that taste good, match my eating preferances, while delivering the protein and skin-healthy nutrients I need. Right now I only know how to make things that may or may not get me those results. Then if I add another person into the mix it's harder. Adding multiple people's preferences is an omission now.
 
 # Solution
 Build a curated recipe collection where each recipe is evaluated and tagged for:
