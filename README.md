@@ -1,7 +1,7 @@
 # Overview 
 Nothing sends me into an annoyed state then being asked "What do you want for dinner?" and yet eating is my favorite hobby. (_And I am not alone... [It's so much more than cooking](https://theweek.com/articles/864481/much-more-than-cooking))_
 
-Because meal planning is time-consuming and repetitive how might I create a meal planning workflow that preserves nourishment and joy, but removes the frustration?
+Because meal planning is time-consuming and repetitive how might I create a personal workflow that preserves nourishment and joy, but removes the frustration?
 
 # Problem
 I need to eat 150g of protein per day for lean body composition and glowing skin. It's time-consuming to find recipes that taste good, match my eating preferances, while delivering the protein and skin-healthy nutrients I need. Right now I only know how to make things that may or may not get me those results. 
