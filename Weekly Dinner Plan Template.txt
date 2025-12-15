@@ -1,0 +1,32 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+THIS WEEK'S DINNERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DINNER 1: [Recipe Name]
+→ Protein: [X]g per serving
+→ Time: [X] min
+→ [Key benefit or note]
+→ Recipe: [URL]
+
+────────────────────────────
+
+DINNER 2: [Recipe Name]
+→ Protein: [X]g per serving
+→ Time: [X] min
+→ [Key benefit or note]
+→ Recipe: [URL]
+
+────────────────────────────
+
+DINNER 3: [Recipe Name]
+→ Protein: [X]g per serving
+→ Time: [X] min
+→ [Key benefit or note]
+→ Recipe: [URL]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Average protein per dinner: [X]g
+(That's [X]% of your 150g daily goal from dinner alone!)
+
+Happy cooking! 🍽️

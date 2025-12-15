@@ -1,0 +1,53 @@
+# Problem(s)
+
+It is time-consuming and a lot of mental calories to change eating patterns to optimize protein intake with meals I enjoy eating. 
+
+# Goals 
+
+- less than 20% body fat (quantitative)
+- radiant skin (qualitative) 
+ 
+# Why Now 
+
+- Lack confidence in body 
+- Jeans fitting tigheter 
+- Highest weight on the scale in lifetime 
+
+# Solution 
+- Generate a one day meal plan that includes 3 meals in a day and one snack
+
+
+# Requirements 
+- Meal plan summary should be short 
+- Meal plan should include a list of the instructions for prep 
+- Generate a list of ingrendients to shop. Make it compatible with Apple reminders app
+- Create a source of truth file likely CSV or MD that holds foods to make as well as their caloric and macro makeup and URLs
+- Allow user to send an email to of the menu recap 
+- Menu recap should be only the title of the meal, the URL (if available) amount of protein and if its glowing skin (what do I need to research for glowing skin?)
+
+
+## INPUTS // later - change based on the user
+
+### Biometrics 
+
+- 150 lbs 
+- 5 ft 4 in tall
+- 39 years old (will be 40 years old in 3 mos)
+
+## Food Sensitivities
+These are foods that cause GI distress when consumed. It's best to avoid these at all costs.
+
+- gluten 
+- wheat 
+- cow's milk 
+- eggs
+
+## Foods To Minimize 
+
+I will not make these at home but will eat them in small quantities if made properly 
+
+- mushrooms 
+- black beans 
+- pinto beans
+- salmon 
+
