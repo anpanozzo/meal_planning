@@ -1,1 +1,13 @@
 Molly Baz Get Well Soup.jpg
+
+# Operational / generated — not source of truth
+meal_planner.db
+weekly_plan.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
