@@ -25,9 +25,10 @@ STALE_DAYS = 14
 # --- DB loaders ---
 
 def load_avoid_list(conn):
+    """All avoid foods across me/casey/both — Casey eats what AP cooks, so his avoids filter too."""
     c = conn.cursor()
     c.execute(
-        "SELECT food_item FROM preferences WHERE category='avoid' AND applies_to IN ('me', 'both')"
+        "SELECT food_item FROM preferences WHERE category='avoid' AND applies_to IN ('me', 'casey', 'both')"
     )
     return [row[0].lower() for row in c.fetchall()]
 

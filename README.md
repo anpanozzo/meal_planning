@@ -106,7 +106,7 @@ meal-planner/
 1. **After cooking a new recipe:** Run `python add_recipe.py` to log it.
 2. **Weekly (Sunday):** Run `python plan_meals.py` to generate the week's plan.
 3. **Review:** Open `weekly_plan.md`, adjust if needed, take the shopping list to the store.
-4. **As preferences evolve:** Run `python add_preference.py` or `python add_substitution.py`.
+4. **As preferences evolve:** Edit `data/preferences_seed.md` and run `python bulk_import.py` (or use `python add_preference.py` / `python add_substitution.py` for quick DB-only adds). See [PREFERENCES.md](PREFERENCES.md) for the full guide.
 
 # Principles
 
