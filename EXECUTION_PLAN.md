@@ -48,6 +48,7 @@ Triggered by friction, not a calendar. Candidates:
 - **2026-04-19 — Rating ≥ 4 AND casey_approved as hard filter.** "Like" but not "love" recipes can still be added; they just need to earn their way in via rating.
 - **2026-04-19 — Substring match for avoid filtering.** Good enough for a prototype; will miss weird cases ("dairy-free milk" would still contain "dairy" substring). If it causes a false positive in practice, switch to tokenized match.
 - **2026-04-19 — 14 days as the "stale" threshold.** Arbitrary but round. Revisit after 4 weeks of use.
+- **2026-04-19 — Substitutions waive the avoid filter.** If an avoid ingredient has a defined substitution, the recipe is not dropped — the shopping list applies the sub instead. Rationale: AP routinely substitutes dairy/gluten/eggs and doesn't want those to block meal selection. Hard-avoids (mushrooms, salmon, seafood, tofu) have no substitutions and continue to drop recipes. To re-enable strict filtering for a specific avoid, delete its substitution row.
 
 ## Risks
 

@@ -53,7 +53,7 @@ Weekly meal planning consumes ~30 minutes of working-memory-heavy thinking every
 
 ### Planner rules
 1. Candidate recipes = rating >= 4 AND casey_approved.
-2. Exclude any recipe whose ingredients contain a food marked `avoid` for `me` or `both`.
+2. Exclude any recipe whose ingredients contain an `avoid` food (for `me` or `both`) **when that avoid has no substitution defined**. If every avoid-match in the recipe has a substitution in the `substitutions` table, the recipe is eligible and the shopping list applies the swap. Hard-avoids with no substitution (mushrooms, salmon, seafood, tofu, etc.) continue to filter the recipe out.
 3. Prefer recipes not cooked in the last 14 days.
 4. Include 1–2 recipes featuring a `try` preference, when the pool allows.
 5. 5 lunches + 5 dinners; 2 weekdays intentionally unfilled (flex for leftovers / takeout / improvise).

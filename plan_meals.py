@@ -41,10 +41,34 @@ def load_try_list(conn):
 def load_substitutions(conn):
     c = conn.cursor()
     c.execute('SELECT original_ingredient, substitute, context FROM substitutions')
-    return [(row[0].lower(), row[1], row[2]) for row in c.fetchall()]
+    rows = [(row[0].lower(), row[1], row[2]) for row in c.fetchall()]
+    # Sort by original-length descending so longer/more specific matches win first
+    # (e.g., 'buttermilk' is tried before 'butter' when scanning a recipe's ingredients)
+    rows.sort(key=lambda r: -len(r[0]))
+    return rows
 
 
-def fetch_candidate_recipes(conn, avoid_list):
+def unresolvable_avoid(ingredients, avoid_list, sub_originals):
+    """True if any ingredient matches an avoid that has no substitution.
+
+    An avoid match is considered resolvable if any substitution's original ingredient
+    overlaps the avoid term (either direction): `butter` avoid is resolvable if any
+    sub original contains 'butter' or is contained by 'butter'. The shopping list
+    will then swap the ingredient at serve time.
+    """
+    if not avoid_list:
+        return False
+    haystack = ' '.join(ingredients).lower()
+    for avoid in avoid_list:
+        if avoid not in haystack:
+            continue
+        if any(avoid in so or so in avoid for so in sub_originals):
+            continue  # there's a substitution for this concept — waive
+        return True
+    return False
+
+
+def fetch_candidate_recipes(conn, avoid_list, sub_originals):
     c = conn.cursor()
     c.execute(
         '''
@@ -56,7 +80,7 @@ def fetch_candidate_recipes(conn, avoid_list):
     recipes = []
     for row in c.fetchall():
         ingredients = json.loads(row[2]) if row[2] else []
-        if contains_any(ingredients, avoid_list):
+        if unresolvable_avoid(ingredients, avoid_list, sub_originals):
             continue
         recipes.append({
             'id': row[0],
@@ -218,7 +242,8 @@ def main():
     avoid_list = load_avoid_list(conn)
     try_list = load_try_list(conn)
     substitutions = load_substitutions(conn)
-    recipes = fetch_candidate_recipes(conn, avoid_list)
+    sub_originals = [s[0] for s in substitutions]
+    recipes = fetch_candidate_recipes(conn, avoid_list, sub_originals)
     conn.close()
 
     if not recipes:

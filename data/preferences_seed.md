@@ -73,12 +73,29 @@ From Meal Planning.md:
 Format: `original -> substitute (optional context)`. Note: `cow's milk` rather than
 generic `milk` to avoid false-positives on `coconut milk`.
 
+A recipe is eligible for planning if every avoid-match has a substitution here —
+in that case the shopping list will use the substitute instead of dropping the recipe.
+
 - butter -> ghee (savory dishes)
 - butter -> coconut oil (baking)
 - cow's milk -> oat milk
 - heavy cream -> coconut cream
 - yogurt -> coconut yogurt
+- sour cream -> coconut yogurt
+- buttermilk -> oat milk + 1 tbsp lemon juice per cup
+- cheese -> dairy-free cheese
+- parmesan -> nutritional yeast
+- mozzarella -> dairy-free mozzarella
+- cheddar -> dairy-free cheddar
+- feta -> dairy-free feta
+- ricotta -> cashew ricotta
+- mayonnaise -> vegan mayonnaise
 - all-purpose flour -> 1:1 gluten-free flour (baking)
+- wheat flour -> gluten-free flour
+- wheat -> gluten-free alternative
+- bread -> gluten-free bread
+- pasta -> gluten-free pasta
+- couscous -> quinoa
+- bulgur -> quinoa
 - eggs -> flax egg (baking, 1 tbsp ground flax + 3 tbsp water per egg)
 - soy sauce -> tamari
-- pasta -> gluten-free pasta
